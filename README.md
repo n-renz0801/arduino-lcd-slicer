@@ -5,13 +5,13 @@ Arduino sketch that demonstrates controlling an I2C 20x4 LCD with a potentiomete
 
 - Arduino board (e.g., Nano, Uno, Mega – any board with I²C support)  
 - LCD1602 display with I²C interface  
-- Potentiometer (10 kΩ recommended)  
-- Jumper wires and breadboard (optional, for prototyping)  
+- Potentiometer  
+- Jumper wires and breadboard 
 
 ## Wiring Instructions
 
 ### Potentiometer
-- Center pin → `A0` (analog input)  
+- Center pin → `A0` (analog input) 
 - Side pins → `5V` and `GND`  
 
 ### LCD (I²C interface)
