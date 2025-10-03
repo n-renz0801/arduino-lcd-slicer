@@ -3,16 +3,28 @@ Arduino sketch that demonstrates controlling an I2C 20x4 LCD with a potentiomete
 
 ## Hardware Requirements
 
-- Arduino Nano
-- LCD1602 with I2C interface
-- Potentiometer (10kΩ)
+- Arduino board (e.g., Nano, Uno, Mega – any board with I²C support)  
+- LCD1602 display with I²C interface  
+- Potentiometer (10 kΩ recommended)  
+- Jumper wires and breadboard (optional, for prototyping)  
 
 ## Wiring Instructions
 
-- Nano A4 → LCD SDA  
-- Nano A5 → LCD SCL  
-- Potentiometer center pin → A0  
-- Potentiometer sides → 5V and GND  
+### Potentiometer
+- Center pin → `A0` (analog input)  
+- Side pins → `5V` and `GND`  
+
+### LCD (I²C interface)
+- `SDA` → connect to your board’s **SDA pin**  
+- `SCL` → connect to your board’s **SCL pin**  
+- `VCC` → `5V`  
+- `GND` → `GND`  
+
+### Notes
+- **Arduino Nano / Uno** → `SDA = A4`, `SCL = A5`  
+- **Arduino Mega** → `SDA = pin 20`, `SCL = pin 21`   
+
+If you’re using a different Arduino board, check the official documentation for the correct SDA/SCL pin locations.
 
 ## Schematic
 ![LCD Slicer Schematic](docs/lcd_pot_schematic.png)
